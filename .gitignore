@@ -1,0 +1,28 @@
+cat > .gitignore << 'EOF'
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Python virtual environment (never commit this)
+venv/
+.env
+__pycache__/
+*.pyc
+
+# PySpark / Java jars
+*.jar
+
+# dbt
+dbt/ecommerce_dbt/target/
+dbt/ecommerce_dbt/dbt_packages/
+dbt/ecommerce_dbt/logs/
+
+# Airflow
+airflow/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
