@@ -1,4 +1,3 @@
-# glue_jobs/silver_orders.py
 from pyspark.context import SparkContext
 from awsglue.context import GlueContext
 from pyspark.sql import functions as F
